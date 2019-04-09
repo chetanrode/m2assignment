@@ -40,7 +40,13 @@ class Data extends AbstractHelper
      */
     public function getExtrafee()
     {
-        $fee = $this->_request->getParams();
+        /*$fee = $this->_request->getParams();
+        print_r($fee);
+        die('Get data');
+        return $fee;*/
+
+        $storeScope = \Magento\Store\Model\ScopeInterface::SCOPE_STORE;
+        $fee = $this->scopeConfig->getValue(self::CONFIG_CUSTOM_FEE, $storeScope);
         return $fee;
     }
 

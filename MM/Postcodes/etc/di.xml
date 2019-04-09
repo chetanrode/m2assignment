@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- BOF local_postcode-->
+    <preference for="MM\Postcodes\Api\LocalPostcodeRepositoryInterface" type="MM\Postcodes\Model\LocalPostcodeRepository" />
+    <preference for="MM\Postcodes\Api\Data\LocalPostcodeInterface" type="MM\Postcodes\Model\LocalPostcode" />
+    <virtualType name="MM\Postcodes\Model\ResourceModel\LocalPostcode\Collection"
+                 type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">local_postcode</argument>
+            <argument name="resourceModel" xsi:type="string">MM\Postcodes\Model\ResourceModel\LocalPostcode</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="localpostcode_data_source" xsi:type="string">MM\Postcodes\Model\ResourceModel\LocalPostcode\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- EOF local_postcode-->
+
+    <!-- BOF problem_postcode-->
+    <preference for="MM\Postcodes\Api\ProblemPostcodeRepositoryInterface" type="MM\Postcodes\Model\ProblemPostcodeRepository" />
+    <preference for="MM\Postcodes\Api\Data\ProblemPostcodeInterface" type="MM\Postcodes\Model\ProblemPostcode" />
+    <virtualType name="MM\Postcodes\Model\ResourceModel\ProblemPostcode\Collection"
+                 type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">problem_postcode</argument>
+            <argument name="resourceModel" xsi:type="string">MM\Postcodes\Model\ResourceModel\ProblemPostcode</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="Problempostcode_data_source" xsi:type="string">MM\Postcodes\Model\ResourceModel\ProblemPostcode\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- EOF problem_postcode-->
+</config>

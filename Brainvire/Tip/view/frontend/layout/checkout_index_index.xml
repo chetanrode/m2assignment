@@ -34,9 +34,19 @@
                                                         </item>
                                                     </item>
                                                 </item>
+
+                                                <item name="children" xsi:type="array">
+                                                    <item name="tip_amount" xsi:type="array">
+                                                        <item name="component" xsi:type="string">Brainvire_Tip/js/view/tip-amount-block</item>
+                                                    </item>
+                                                </item>
                                             </item>
                                         </item>
-                                    </item>
+                                    </item><item name="children" xsi:type="array">
+                                                    <item name="tip_amount" xsi:type="array">
+                                                        <item name="component" xsi:type="string">Brainvire_Tip/js/view/tip-amount-block</item>
+                                                    </item>
+                                                </item>
                                 </item>
                             </item>
                         </item>
