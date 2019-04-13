@@ -1,4 +1,3 @@
-27
 define([
         'ko',
         'uiComponent',
@@ -10,7 +9,6 @@ define([
         var show_hide_Extrafee_blockConfig = window.checkoutConfig.show_hide_Extrafee_shipblock;
         var fee_label = window.checkoutConfig.fee_label;
         var custom_fee_amount = window.checkoutConfig.custom_fee_amount;
-
 
         return Component.extend({
             defaults: {

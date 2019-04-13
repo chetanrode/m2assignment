@@ -1,0 +1,25 @@
+{
+  "name": "oscpmodule/minorder",
+  "version": "1.0.0",
+  "Author":"Chetan Rode",
+  "require": {
+    "php": "~7.0.13|~7.1.0",
+    "magento/module-checkout": "101.0.*",
+    "magento/module-sales": "101.0.*",
+    "magento/module-store": "100.2.*",
+    "magento/module-customer": "101.0.*",
+    "magento/module-quote": "101.0.*",
+    "magento/framework": "101.0.*"
+  },
+  "type": "magento2-module",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "autoload": {
+    "files": [ "registration.php" ],
+    "psr-4": {
+      "OscpModule\\MinOrder\\": ""
+    }
+  }
+}

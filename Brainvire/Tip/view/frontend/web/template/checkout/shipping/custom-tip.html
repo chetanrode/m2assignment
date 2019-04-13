@@ -1,0 +1,13 @@
+<div>
+    <form id="custom-checkout-form" method="post" class="form" data-bind="attr: {'data-hasrequired': $t('* Required Fields')}">
+        <fieldset class="fieldset">
+            <legend data-bind="i18n: 'Optional : FREE Local Delivery'"></legend>
+        </fieldset>
+        <button type="reset">
+            <span data-bind="i18n: 'Reset'"></span>
+        </button>
+        <button type="button" data-bind="click: onSubmit" class="action">
+            <span data-bind="i18n: 'Add Tip' "></span>
+        </button>
+    </form>
+</div>
